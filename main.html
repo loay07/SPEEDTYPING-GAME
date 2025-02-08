@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Typing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css Files/stylesheet.css" />
+    <link rel="stylesheet" href="css Files/optionstyle.css" />
+    <link rel="stylesheet" href="css Files/winner.css" />
+  </head>
+  <body>
+    <div id="timer" class="hidden">Press any key...</div>
+    <div class="text-display container hidden">
+      <p id="static-sentence">
+        The sunset painted the sky with gold and crimson hues, while a gentle
+        breeze carried the scent of jasmine across the meadow, where wildflowers
+        swayed in harmony.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="start hidden">
+      <h2>Choose difficulty</h2>
+      <div class="container-options">
+        <button class="easy btn difficulty">Easy</button>
+        <button class="medium btn difficulty">Medium</button>
+        <button class="hard btn difficulty">Hard</button>
+      </div>
+    </div>
+    <div class="winner hidden">
+      <div class="header">
+        <img src="icons/speed.png" />
+        <h3>Your Test Score!</h3>
+      </div>
+      <div class="main-score">
+        <span class="accuracy score"
+          ><img src="icons/accuracy.png" />
+          <h5 class="accuracy-replace">95</h5>
+          <a>Accuracy</a></span
+        >
+        <span class="x score"><img src="icons/x.png" /></span>
+        <span class="wpm score"
+          ><img src="icons/keyboard.png" />
+          <h5 class="wpm-replace">30</h5>
+          <a>wpm</a></span
+        >
+        <span class="score"> <img src="icons/arrow-right.png" /></span>
+        <span class="final score"
+          ><img src="icons/average.png" />
+          <h5 class="final-replace">27</h5>
+          <a>wpm</a></span
+        >
+      </div>
+      <div class="continue">
+        <div class="left-section">
+          <span class="time score small"
+            ><img src="icons/timer.png" />Time Taken:
+            <a class="time-replace">40s</a></span
+          >
+          <span class="correct score small"
+            ><img src="icons/correct.png" />Correct Words:
+            <a class="correct-replace">20 </a></span
+          >
+        </div>
+        <button class="replay score">Play again!</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

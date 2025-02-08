@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, #5b1be7d1, #000000);
+}
+
+.container {
+  text-align: center;
+}
+
+.typewriter-text {
+  font-size: 7rem;
+  margin-bottom: 30rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 6px solid #ffffff;
+  animation: typing 3s steps(12) 1, blinkCursor 0.8s step-end infinite;
+}
+
+.start-btn {
+  font-family: inherit;
+  padding: 12px 50px;
+  font-size: 30px;
+  font-weight: 400;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: 3px black solid;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.2s;
+}
+
+.start-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.modal-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  max-width: 50rem;
+  min-width: 50rem;
+  min-height: 20rem;
+  max-height: 20rem;
+  -webkit-box-shadow: 0 0 30px #c9d6df;
+  -moz-box-shadow: 0 0 30px #c9d6df;
+  box-shadow: 0 0 30px #c9d6df;
+  height: 50%;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+h3 {
+  color: #000000;
+  font-size: 3.5rem;
+  margin-top: -3rem;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 12ch;
+  }
+}
+@keyframes blinkCursor {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #000000;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
